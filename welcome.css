@@ -1,0 +1,441 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+
+header{
+    position: fixed;
+    background: rgb(57, 177, 57);
+    padding: 35px;
+    width: 100%;
+    height: 50px;
+
+}
+
+.left_area h3{
+    position: fixed;
+    color:black;
+    margin-top: -2em;
+    padding-top: 0.5em;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    
+}
+
+.left_area span{
+    color: #1DC4E7;
+}
+
+.logout_btn{
+    padding: 5px;
+    background: #1DC4E7;
+    text-decoration: none;
+    float: right;
+    margin-top: -2.5em;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover{
+    background: #e5eae5;
+}
+
+
+
+
+.sidebar{
+    background:rgb(182, 186, 187) ;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    box-shadow: #000000;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+
+.sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    
+
+}
+
+.sidebar h4{
+    color: rgb(92, 92, 92);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    transition-property: background;
+}
+
+
+.sidebar a:hover{
+    background:rgb(57, 177, 57);
+
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+
+.sidebar .form-control-file{
+ 
+    position: absolute;
+    width: 6em;
+    opacity: 0;
+    margin-top: 6em;
+    margin-left: 4.6em;
+    padding-top: 0.5em;
+    
+      
+    
+
+}
+
+.sidebar .select-profile{
+    position: absolute;
+    width: 2em;
+    opacity: 0.2;
+    margin-top: 4.4em;
+    margin-left: -1em;
+   padding-top: 2em;
+      
+   
+  
+    
+ 
+   
+    
+
+}
+
+.sidebar .profile-img{
+    position: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #a09c9c;
+    margin-top: 0.2em;
+   
+
+}
+
+
+
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: rgb(72, 209, 233);
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+
+#check{
+    display: none;
+}
+
+.content {
+   
+    margin-left: 250px;
+    padding-top: 80px;
+    background-color: white;
+    background-position: fixed;
+     height:100vh;
+     transition: 0.5s;
+
+
+   
+    
+}
+
+
+table.studenttable{
+   position: relative;
+   width: 100%;
+   height: 450px;
+  
+}
+
+
+
+
+
+#check:checked ~ .content{
+    margin-left: 60px;
+
+}
+
+#check{
+    display: none;
+}
+
+.table-box{
+    margin: 50px auto;
+    
+    height:500px;
+}
+
+.table-row{
+
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0,50,0.3)
+
+}
+
+.addmodal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+
+    background-color: white;
+}
+
+
+.card{
+  
+   
+    background-color: #ffffff;
+    background-position: fixed;
+     height:80vh;
+     transition: 0.5s;
+   
+
+
+}
+
+body{
+    font-family: Arial;
+    margin: 80px 100px 10px 100px;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background: #555652;
+}
+
+.dashboardcontainer {
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    padding-right: 1em;
+    margin-top: -1em;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+ 
+}
+
+
+.studentcontainer {
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    margin-top: -0.6em;
+    margin-bottom: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.teachercontainer {
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    margin-top: -0.6em;
+    margin-bottom: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+   
+}
+
+.tablecontainer {
+    position: relative;
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    margin-top: -0.6em;
+    margin-bottom: auto;
+    width: 100%;
+    height: 100%;
+    
+   
+}
+
+
+
+
+.studentdetailscontainer{
+    position: relative;
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    margin-top: -0.6em;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 100%;
+    height:675px;
+  
+    
+}
+ .addquestioncontainer {
+    position: relative;
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    margin-top: -0.6em;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 100%;
+    height:unset;
+  
+   
+}
+
+
+div.adminViewQuestionContainer{
+    position: relative;
+    color: #E8E9EB;
+    background: gray;
+    border: #555652 1px solid;
+    padding: 10px;
+    margin-top: -0.6em;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 100%;
+    height:unset;
+
+
+}
+
+
+
+.content #Schart_area{
+    position: absolute;
+    background: #abafaf;
+    float: right;
+    margin-left: 23em ;
+    margin-top: -23em ;
+   
+    
+    
+
+}
+
+
+
+
+
+
+.chartbox {
+
+width : 800px;
+height : 800px;
+
+
+}
+
+label{
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: .5em;
+}
+
+
+input,textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+
+
+}
+
+
+
+input[type="submit"]{
+    background-color: rgb(35, 201, 35);
+    color: white;
+    font-weight: bold;
+    font-size: 1.0em;
+    border: none;
+    margin-bottom: 1em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .4em 2em;
+    width: unset;
+    cursor: pointer;
+
+}
+
+
+
